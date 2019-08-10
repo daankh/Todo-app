@@ -10,20 +10,28 @@
 </head>
 
 <body>
-    <div class="container">
-        <label class="initialism">Task priority: <input id="taskPriority" type="number" placeholder="priotity" min="1"
-                max="10" value="5"></label>
-        <input id="taskInput" placeholder="Place your task here"><br>
-        <button id="addTaskButton" class="btn btn-primary">Add task</button>
+    <header class="header">
+        <div class="container">
+            <h1>Todo list</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <label class="initialism">Task priority: <input class="form-control-range" id="taskPriority" type="number"
+                    placeholder="priotity" min="1" max="10" value="5"></label>
+            <input id="taskInput" placeholder="Place your task here" class="form-control"
+                aria-describedby="addon-wrapping"><br>
+            <button id="addTaskButton" class="btn btn-primary">Add task</button>
 
-        <span class="initialism">Tasks to finish: <span id="counter"></span></span>
+            <span class="initialism">Tasks to finish: <span id="counter"></span></span>
 
 
-        <ul id="taskList" class="list-unstyled">
-        </ul>
+            <ul id="taskList" class="list-unstyled">
+            </ul>
 
-        <button id="removeFinishedTasksButton" class="btn btn-danger">Remove finished tasks</button>
-    </div>
+            <button id="removeFinishedTasksButton" class="btn btn-danger">Remove finished tasks</button>
+        </div>
+    </main>
     <script src="js/app.js"></script>
 </body>
 

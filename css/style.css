@@ -1,4 +1,11 @@
-.container {
+header {
+    background-color: #10ac84;
+    color: #FFF;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.main {
     margin-top: 20px;
 }
 
