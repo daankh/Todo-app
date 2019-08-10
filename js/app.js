@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var todoEl = document.createElement('li')
         todoEl.dataset.id = id;
         todoEl.classList.add('container')
+        todoEl.style.marginTop = 20 + "px";
 
         var todoHeader = document.createElement('h1')
         todoHeader.innerText = todoText
